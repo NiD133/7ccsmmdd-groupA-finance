@@ -1,0 +1,9 @@
+grammar mdd.groupA.finance.Finance with org.eclipse.xtext.common.Terminals
+
+generate finance "http://www.groupA.mdd/finance/Finance"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
